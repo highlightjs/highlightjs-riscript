@@ -22,21 +22,21 @@ export default function (hljs) {
         end: /\(\)/
     };
 
-    let VARIABLE = {
-        className: 'rs-var',
+    let SYMBOL = {
+        className: 'rs-symbol',
         begin: /\$[\w]+/
     };
 
-    let DYNAMICVARIABLE = {
-        className: 'rs-dynamicVar',
+    let DYNAMIC = {
+        className: 'rs-dynamic',
         begin: /\$\$[\w]+/
     };
 
     let CONTAINS = [
         CHOICE,
         TRANSFORM,
-        VARIABLE,
-        DYNAMICVARIABLE,
+        SYMBOL,
+        DYNAMIC,
         hljs.C_BLOCK_COMMENT_MODE,
         hljs.C_LINE_COMMENT_MODE
     ];
@@ -45,7 +45,7 @@ export default function (hljs) {
 
     return {
         name: "RiScript",
-        aliases: ['riscript'],
+        aliases: ['rs'],
         case_insensistive: false,
         disableAutodetect: true,
         keywords: '',

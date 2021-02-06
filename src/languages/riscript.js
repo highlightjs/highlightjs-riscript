@@ -36,11 +36,19 @@ export default function (hljs) {
         begin: /[\$]{1,2}[\w]+\=/
     }
 
+    let CONTINUATION = {
+        className: 'rs-continuation',
+        begin: /[\w]+[\s]*/,
+        end: /\\$/
+    }
+
     let CONTAINS = [
         CHOICE,
         TRANSFORM,
         SYMBOL,
         DYNAMIC,
+        ASSIGN,
+        CONTINUATION,
         hljs.C_BLOCK_COMMENT_MODE,
         hljs.C_LINE_COMMENT_MODE
     ];

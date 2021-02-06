@@ -1,12 +1,12 @@
 /*
-Language: RiScript (https://rednoise.org/rita/reference/riscript.html), part of the RiTa project at https://rednoise.org/rita 
+Language: RiScript (https://rednoise.org/rita/reference/riscript.html), part of the RiTa project at https://rednoise.org/rita
 Author of this little highlighter: JohnC <real.john.chueng@gmail.com>
 */
 
 export default function (hljs) {
-    
+
     /*
-    Mapping 
+    Mapping
     highlight group ->  css class
     */
     let CHOICE = {
@@ -39,15 +39,15 @@ export default function (hljs) {
         hljs.C_BLOCK_COMMENT_MODE,
         hljs.C_LINE_COMMENT_MODE
     ];
-        
-    
+
+
 
     return {
         name: "RiScript",
         aliases: ['riscript'],
         case_insensistive: false,
         disableAutodetect: true,
-        keywords: 'fo',
+        keywords: '',
         contains: CONTAINS
     };
 

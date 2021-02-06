@@ -1,1 +1,1 @@
-# WIP highlight.js grammar for (riscript)[https://rednoise.org/rita/reference/riscript.html]
+# WIP highlight.js grammar for [riscript](https://rednoise.org/rita/reference/riscript.html)

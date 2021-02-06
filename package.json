@@ -1,0 +1,14 @@
+{
+  "name": "riscript",
+  "version": "1.0.0",
+  "description": "highlight.js grammar for riscript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JohnC <real.john.chueng@gmail.com>",
+  "license": "GPL-3.0-or-later"
+}

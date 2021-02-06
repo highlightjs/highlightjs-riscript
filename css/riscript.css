@@ -7,9 +7,9 @@
     --text: #ffffff;
     --choice: #609664;
     --transform: #ca975d;
-    --dynamicVar: #a271cf;
-    --var: #e98388;
-    --c0: #e5b742;
+    --dynamic: #a271cf;
+    --symbol: #e98388;
+    --assign: #e5b742;
     --c1: #e0923a;
     --c2: #508be5;
     --comment: #7f7f7f;
@@ -42,15 +42,19 @@
   }
   
   .hljs-rs-dynamicVar {
-    color: var(--dynamicVar) !important;
+    color: var(--dynamic) !important;
   }
   
   .hljs-rs-var {
-    color: var(--var) !important;
+    color: var(--symbol) !important;
   }
   
   .hljs-comment {
     color: var(--comment);
+  }
+
+  .hljs-rs-assign {
+    color: var(--assign);
   }
   
   

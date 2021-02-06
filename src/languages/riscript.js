@@ -19,7 +19,6 @@ export default function (hljs) {
     let TRANSFORM = {
         className: 'rs-transform',
         begin: /\.[\w]+/,
-        end: /\(\)/
     };
 
     let SYMBOL = {
@@ -31,6 +30,11 @@ export default function (hljs) {
         className: 'rs-dynamic',
         begin: /\$\$[\w]+/
     };
+
+    let ASSIGN = {
+        className: 'rs-assign',
+        begin: /[\$]{1,2}[\w]+\=/
+    }
 
     let CONTAINS = [
         CHOICE,
@@ -45,7 +49,7 @@ export default function (hljs) {
 
     return {
         name: "RiScript",
-        aliases: ['rs'],
+        aliases: ['risc','riscript'],
         case_insensistive: false,
         disableAutodetect: true,
         keywords: '',

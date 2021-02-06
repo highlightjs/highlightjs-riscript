@@ -11,14 +11,12 @@ export default function (hljs) {
     */
     let CHOICE = {
         className: 'rs-choice',
-        begin: /\([.]*/,
-        end: /[.]*\)/,
-        contains: [self]
+        begin: /\([.]*\)/
     };
 
     let TRANSFORM = {
         className: 'rs-transform',
-        begin: /\.[\w]+/,
+        begin: /\.[\w]+[\(]?[\)]?/,
     };
 
     let SYMBOL = {
@@ -38,16 +36,15 @@ export default function (hljs) {
 
     let CONTINUATION = {
         className: 'rs-continuation',
-        begin: /[\w]+[\s]*/,
-        end: /\\$/
+        begin: /[\w]+[\s]*\\$/
     }
 
     let CONTAINS = [
-        CHOICE,
-        TRANSFORM,
-        SYMBOL,
-        DYNAMIC,
         ASSIGN,
+        TRANSFORM,
+        DYNAMIC,
+        SYMBOL,
+        CHOICE,
         CONTINUATION,
         hljs.C_BLOCK_COMMENT_MODE,
         hljs.C_LINE_COMMENT_MODE

@@ -41,11 +41,11 @@
     color: var(--transform) !important;
   }
   
-  .hljs-rs-dynamicVar {
+  .hljs-rs-dynamic {
     color: var(--dynamic) !important;
   }
   
-  .hljs-rs-var {
+  .hljs-rs-symbol {
     color: var(--symbol) !important;
   }
   

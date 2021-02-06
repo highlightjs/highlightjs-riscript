@@ -9,9 +9,16 @@ export default function (hljs) {
     Mapping
     highlight group ->  css class
     */
+    
+    let WEIGHT = {
+        className: 'rs-weight',
+        begin: /\[[0-9]+\]/
+    }
+    
     let CHOICE = {
         className: 'rs-choice',
-        begin: /\([.]*\)/
+        begin: /\(([^)]*\|)*[^)^\n]*\)/,
+        contains: [WEIGHT]
     };
 
     let TRANSFORM = {

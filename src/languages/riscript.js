@@ -12,7 +12,8 @@ export default function (hljs) {
     let CHOICE = {
         className: 'rs-choice',
         begin: /\([.]*/,
-        end: /[.]*\)/
+        end: /[.]*\)/,
+        contains: [self]
     };
 
     let TRANSFORM = {

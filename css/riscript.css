@@ -12,6 +12,7 @@
     --assign: #e5b742;
     --continuation: #e0923a;
     --weight: #508be5;
+    --entity: #f58af5;
     --comment: #7f7f7f;
   }
   
@@ -63,6 +64,10 @@
 
   .hljs-rs-weight {
     color: var(--weight);
+  }
+
+  .hljs-rs-entity {
+    color: var(--entity);
   }
 
 /* TODOs? darktheme */

@@ -18,7 +18,7 @@ export default function (hljs) {
     let CHOICE = {
         className: 'rs-choice',
         begin: /\(([^)]*\|)*[^)^\n]*\)/,
-        contains: [WEIGHT]
+        //contains: [WEIGHT] // not working, but regex tested ok, 
     };
 
     let TRANSFORM = {
@@ -46,11 +46,17 @@ export default function (hljs) {
         begin: /[\w]+[\s]*\\$/
     }
 
+    let ENTITY = {
+        className: 'rs-entity',
+        begin: /&[a-z]+;|&#[0-9]+;|&#x[a-f0-9]+;/
+    }
+
     let CONTAINS = [
         ASSIGN,
         TRANSFORM,
         DYNAMIC,
         SYMBOL,
+        ENTITY,
         CHOICE,
         CONTINUATION,
         hljs.C_BLOCK_COMMENT_MODE,

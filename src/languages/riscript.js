@@ -51,12 +51,18 @@ export default function (hljs) {
         begin: /&[a-z]+;|&#[0-9]+;|&#x[a-f0-9]+;/
     }
 
+    let CONDITIONAL = {
+        className: 'rs-conditional',
+        begin: /\{(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+)\,)?(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+))\}\?/
+    }
+
     let CONTAINS = [
         ASSIGN,
         TRANSFORM,
         DYNAMIC,
         SYMBOL,
         ENTITY,
+        CONDITIONAL,
         CHOICE,
         CONTINUATION,
         hljs.C_BLOCK_COMMENT_MODE,

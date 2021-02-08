@@ -10,6 +10,7 @@
   --continuation_darkmode: #f8ff93;
   --weight_darkmode: #508be5;
   --entity_darkmode: #ff46ff;
+  --conditional_darkmode: #f8a0a0;
   --comment_darkmode: #609664;
 
   --selection_lightmode: rgba(47, 142, 252, 0.35);
@@ -23,9 +24,11 @@
   --continuation_lightmode: #;
   --weight_lightmode: #;
   --entity_lightmode: #;
+  --conditional_lightmode: #;
   --comment_lightmode: #669851;
 }
 
+/*----------------css for highlight.js-------------*/
 /* theme tmpl from https://codepen.io/Tibixx/pen/NLpNar*/
 /* default theme(dark) */
 
@@ -81,6 +84,10 @@ pre code *::selection,
 
 .hljs-rs-entity {
   color: var(--entity_darkmode);
+}
+
+.hljs-rs-conditional {
+  color: var(--conditional_darkmode);
 }
 
 /* TODOs? lighttheme */

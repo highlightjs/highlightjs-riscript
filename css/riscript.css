@@ -1,77 +1,86 @@
-/* theme tmpl from https://codepen.io/Tibixx/pen/NLpNar*/
-
-/* default theme */
 :root {
-    --selection: rgba(224, 146, 58, 0.35);
-    --background: #242424;
-    --text: #ffffff;
-    --choice: #609664;
-    --transform: #ca975d;
-    --dynamic: #a271cf;
-    --symbol: #e98388;
-    --assign: #e5b742;
-    --continuation: #e0923a;
-    --weight: #508be5;
-    --entity: #f58af5;
-    --comment: #7f7f7f;
-  }
-  
-  pre code {
-    display: block;
-    overflow-x: auto;
-    padding: 10px;
-    background: var(--background);
-    -webkit-text-size-adjust: none;
-  }
-  
-  pre code *::selection,
-  .hljs::selection {
-    background: var(--selection) !important;
-  }
-  
-  .hljs {
-    color: var(--text);
-    background-color: #242424;
-  }
-  
-  .hljs-rs-choice {
-    color: var(--choice);
-  }
-  
-  .hljs-rs-transform {
-    color: var(--transform) !important;
-  }
-  
-  .hljs-rs-dynamic {
-    color: var(--dynamic) !important;
-  }
-  
-  .hljs-rs-symbol {
-    color: var(--symbol) !important;
-  }
-  
-  .hljs-comment {
-    color: var(--comment);
-  }
+  --selection_darkmode: rgba(47, 142, 252, 0.35);
+  --background_darkmode: #1e1e1e;
+  --text_darkmode: #cbcbcb;
+  --choice_darkmode: #d2aefc; 
+  --transform_darkmode: #cdab53;
+  --dynamic_darkmode: #88a3fa;
+  --symbol_darkmode: #9bdbff;
+  --assign_darkmode: #9a88ff;
+  --continuation_darkmode: #f8ff93;
+  --weight_darkmode: #508be5;
+  --entity_darkmode: #ff46ff;
+  --comment_darkmode: #609664;
 
-  .hljs-rs-assign {
-    color: var(--assign);
-  }
-  
-  .hljs-rs-continuation {
-    color: var(--continuation);
-  }
+  --selection_lightmode: rgba(47, 142, 252, 0.35);
+  --background_lightmode: #ffffff;
+  --text_lightmode: #363636;
+  --choice_lightmode: #b66661; 
+  --transform_lightmode: #867959;
+  --dynamic_lightmode: #2e2bf9;
+  --symbol_lightmode: #3d409b;
+  --assign_lightmode: #;
+  --continuation_lightmode: #;
+  --weight_lightmode: #;
+  --entity_lightmode: #;
+  --comment_lightmode: #669851;
+}
 
-  .hljs-rs-weight {
-    color: var(--weight);
-  }
+/* theme tmpl from https://codepen.io/Tibixx/pen/NLpNar*/
+/* default theme(dark) */
 
-  .hljs-rs-entity {
-    color: var(--entity);
-  }
+pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 10px;
+  background: var(--background);
+  -webkit-text-size-adjust: none;
+}
 
-/* TODOs? darktheme */
+pre code *::selection,
+.hljs::selection {
+  background: var(--selection_darkmode) !important;
+}
 
+.hljs {
+  color: var(--text_darkmode);
+  background-color: var(--background_darkmode);
+}
 
+.hljs-rs-choice {
+  color: var(--choice_darkmode);
+}
+
+.hljs-rs-transform {
+  color: var(--transform_darkmode) !important;
+}
+
+.hljs-rs-dynamic {
+  color: var(--dynamic_darkmode) !important;
+}
+
+.hljs-rs-symbol {
+  color: var(--symbol_darkmode) !important;
+}
+
+.hljs-comment {
+  color: var(--comment_darkmode);
+}
+
+.hljs-rs-assign {
+  color: var(--assign_darkmode);
+}
+
+.hljs-rs-continuation {
+  color: var(--continuation_darkmode);
+}
+
+.hljs-rs-weight {
+  color: var(--weight_darkmode);
+}
+
+.hljs-rs-entity {
+  color: var(--entity_darkmode);
+}
 
 /* TODOs? lighttheme */

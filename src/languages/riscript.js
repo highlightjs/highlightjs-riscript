@@ -17,8 +17,10 @@ export default function (hljs) {
     
     let CHOICE = {
         className: 'rs-choice',
-        begin: /\(([^)]*\|)*[^)^\n]*\)/,
-        //contains: [WEIGHT] // not working, but regex tested ok, 
+        begin: /\(/,
+        end: /\)/,
+        illegal: '\n',
+        contains: [WEIGHT] 
     };
 
     let TRANSFORM = {

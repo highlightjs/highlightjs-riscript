@@ -1,0 +1,62 @@
+<span class="hljs-rs-assign">$mammal=</span><span class="hljs-rs-choice">(dog | child | ox)</span>
+    
+<span class="hljs-rs-assign">$verb=</span><span class="hljs-rs-choice">(watching | listening)</span>
+    
+The <span class="hljs-rs-symbol">$mammal</span><span class="hljs-rs-transform">.pluralize()</span> were <span class="hljs-rs-symbol">$verb</span>.
+
+<span class="hljs-rs-assign">$$dynamic =</span> <span class="hljs-rs-choice">(a|b)</span> and <span class="hljs-rs-choice">(b|c)</span>
+
+<span class="hljs-rs-dynamic">$$dynamic</span>
+
+<span class="hljs-rs-assign">$symbol=</span>assign
+
+<span class="hljs-rs-assign">$symbol=</span><span class="hljs-rs-choice">(assign|not)</span>
+
+<span class="hljs-rs-assign">$symbol=</span>assign<span class="hljs-rs-transform">.transform()</span>
+
+<span class="hljs-rs-choice">()</span>
+
+<span class="hljs-rs-choice">(a<span class="hljs-rs-weight">[8]</span>|b<span class="hljs-rs-weight">[9]</span>)</span>
+
+a   <span class="hljs-rs-continuation">b\</span>
+c 
+
+a <span class="hljs-rs-continuation">b   \</span>
+c
+
+<span class="hljs-rs-continuation">b  \</span>
+c
+
+{<span class="hljs-rs-symbol">$a</span><span class="hljs-rs-entity">&amp;lt;</span>1}?
+<span class="hljs-rs-conditional">{$a&gt;1}?</span>
+<span class="hljs-rs-conditional">{$a=hello}?</span>
+{<span class="hljs-rs-symbol">$a</span><span class="hljs-rs-entity">&amp;lt;</span>1<span class="hljs-rs-transform">.1</span>}?
+<span class="hljs-rs-conditional">{$a&gt;1.1}?</span>
+<span class="hljs-rs-conditional">{$a=hello}?</span>
+{<span class="hljs-rs-symbol">$a</span><span class="hljs-rs-entity">&amp;lt;</span>0<span class="hljs-rs-transform">.1</span>}?
+<span class="hljs-rs-conditional">{$a&gt;0.1}?</span>
+{<span class="hljs-rs-symbol">$a</span><span class="hljs-rs-entity">&amp;lt;</span>=1<span class="hljs-rs-transform">.1</span>}?
+<span class="hljs-rs-conditional">{$a&gt;=1.1}?</span>
+<span class="hljs-rs-conditional">{$a=1.1}?</span>
+<span class="hljs-rs-conditional">{$a&gt;.1}?</span> 
+{<span class="hljs-rs-symbol">$a</span>&gt;1,<span class="hljs-rs-symbol">$b</span><span class="hljs-rs-entity">&amp;lt;</span>1}?
+{<span class="hljs-rs-symbol">$a</span>&gt;1,<span class="hljs-rs-symbol">$b</span><span class="hljs-rs-entity">&amp;lt;</span>1}?
+<span class="hljs-rs-conditional">{$a=ok,$b&gt;=1}?</span> 
+<span class="hljs-rs-conditional">{$a&gt;1,$b&gt;=1}?</span> 
+
+<span class="hljs-rs-conditional">{$a!=ell}?</span>
+<span class="hljs-rs-conditional">{$a*=ell}?</span> 
+<span class="hljs-rs-conditional">{$a^=ell}?</span> 
+<span class="hljs-rs-conditional">{$a$=ell}?</span> 
+<span class="hljs-rs-conditional">{$a$=ell}?</span>
+
+[2]
+
+<span class="hljs-comment">//single-line comment</span>
+<span class="hljs-comment">/* block 
+comment */</span>
+
+&amp;x100;
+<span class="hljs-rs-entity">&amp;lt;</span>
+<span class="hljs-rs-entity">&amp;#100;</span>
+<span class="hljs-rs-entity">&amp;#x10;</span>

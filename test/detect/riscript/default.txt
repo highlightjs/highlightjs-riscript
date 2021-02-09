@@ -1,0 +1,9 @@
+$mammal=(dog | child | ox)
+    
+$verb=(watching | listening)
+    
+The $mammal.pluralize() were $verb.
+
+$$dynamic = (a|b) and (b|c)
+
+$$dynamic

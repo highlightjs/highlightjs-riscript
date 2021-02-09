@@ -20,7 +20,7 @@ export default function (hljs) {
         begin: /\(/,
         end: /\)/,
         illegal: '\n',
-        contains: [WEIGHT] 
+        contains: [WEIGHT]
     };
 
     let TRANSFORM = {
@@ -30,17 +30,19 @@ export default function (hljs) {
 
     let SYMBOL = {
         className: 'rs-symbol',
-        begin: /\$[\w]+/
+        begin: /\$[\w]+/,
+        relevance: 10
     };
 
     let DYNAMIC = {
         className: 'rs-dynamic',
-        begin: /\$\$[\w]+/
+        begin: /\$\$[\w]+/,
+        relevance: 10
     };
 
     let ASSIGN = {
         className: 'rs-assign',
-        begin: /[\$]{1,2}[\w]+\=/
+        begin: /[\$]{1,2}[\w]+[\s]*\=/
     }
 
     let CONTINUATION = {
@@ -55,7 +57,8 @@ export default function (hljs) {
 
     let CONDITIONAL = {
         className: 'rs-conditional',
-        begin: /\{(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+)\,)?(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+))\}\?/
+        begin: /\{(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+)\,)?(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+))\}\?/,
+        relevance: 10,
     }
 
     let CONTAINS = [

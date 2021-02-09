@@ -1,0 +1,62 @@
+$mammal=(dog | child | ox)
+    
+$verb=(watching | listening)
+    
+The $mammal.pluralize() were $verb.
+
+$$dynamic = (a|b) and (b|c)
+
+$$dynamic
+
+$symbol=assign
+
+$symbol=(assign|not)
+
+$symbol=assign.transform()
+
+()
+
+(a[8]|b[9])
+
+a   b\
+c 
+
+a b   \
+c
+
+b  \
+c
+
+{$a&lt;1}?
+{$a>1}?
+{$a=hello}?
+{$a&lt;1.1}?
+{$a>1.1}?
+{$a=hello}?
+{$a&lt;0.1}?
+{$a>0.1}?
+{$a&lt;=1.1}?
+{$a>=1.1}?
+{$a=1.1}?
+{$a>.1}? 
+{$a>1,$b&lt;1}?
+{$a>1,$b&lt;1}?
+{$a=ok,$b>=1}? 
+{$a>1,$b>=1}? 
+
+{$a!=ell}?
+{$a*=ell}? 
+{$a^=ell}? 
+{$a$=ell}? 
+{$a$=ell}?
+
+[2]
+
+//single-line comment
+/* block 
+comment */
+
+&x100;
+&lt;
+&#100;
+&#x10;

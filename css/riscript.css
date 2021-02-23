@@ -41,11 +41,11 @@ pre code {
 }
 
 pre code *::selection,
-.hljs::selection {
+.riscript .hljs::selection {
   background: var(--selection_darkmode) !important;
 }
 
-.hljs {
+.riscript .hljs {
   color: var(--text_darkmode);
   background-color: var(--background_darkmode);
 }

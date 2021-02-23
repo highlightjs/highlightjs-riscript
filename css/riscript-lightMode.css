@@ -46,7 +46,7 @@
   }
   
   .riscript.hljs {
-    color: var(--text_darkmode);
+    color: var(--text_lightmode);
     background-color: var(--background_lightmode);
   }
   

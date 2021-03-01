@@ -15,13 +15,6 @@ export default function (hljs) {
         begin: /\[[0-9]+\]/
     }
     
-    let CHOICE = {
-        className: 'rs-choice',
-        begin: /\(/,
-        end: /\)/,
-        illegal: '\n',
-        contains: [WEIGHT]
-    };
 
     let TRANSFORM = {
         className: 'rs-transform',
@@ -60,6 +53,14 @@ export default function (hljs) {
         begin: /\{(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+)\,)?(\$[\w]+([\!\*\^\$<>]\=|[\=<>])([\w]+|[0-9]?\.[0-9]+))\}\?/,
         relevance: 10,
     }
+
+    let CHOICE = {
+        className: 'rs-choice',
+        begin: /\(/,
+        end: /\)/,
+        //illegal: '\n',
+        contains: [WEIGHT, TRANSFORM, SYMBOL, DYNAMIC, ASSIGN, CONTINUATION, ENTITY, CONDITIONAL, 'self']
+    };
 
     let CONTAINS = [
         ASSIGN,

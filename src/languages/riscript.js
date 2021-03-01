@@ -59,7 +59,7 @@ export default function (hljs) {
         begin: /\(/,
         end: /\)/,
         //illegal: '\n',
-        contains: [WEIGHT, TRANSFORM, SYMBOL, DYNAMIC, ASSIGN, CONTINUATION, ENTITY, CONDITIONAL, 'self']
+        contains: [WEIGHT, ASSIGN, TRANSFORM, DYNAMIC, SYMBOL, ENTITY, CONDITIONAL, 'self']
     };
 
     let CONTAINS = [

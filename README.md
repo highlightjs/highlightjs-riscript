@@ -11,7 +11,7 @@ A simple example is below
     <script src="/path/to/highlightjs-riscript/dist/riscript.min.js"></script>
     <link rel="stylesheet" href="/path/to/css/riscript.css">
     <script>
-        hljs.initHighlightingOnLoad();
+        hljs.highlightAll();
     </script>
     ...
 </head>
